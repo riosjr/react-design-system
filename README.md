@@ -17,3 +17,7 @@ Setup tailwind.config.cjs: add content to watch
 Setup /src/styles/global.css
 
 import './styles/global.css' on App.tsx
+
+# Storybook Setup
+
+yarn sb init --builder @storybook/builder-vite
