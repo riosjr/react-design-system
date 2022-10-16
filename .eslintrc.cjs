@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 module.exports = {
 	env: {
 		browser: true,
@@ -22,5 +23,11 @@ module.exports = {
 		quotes: ['error', 'single'],
 		semi: ['error', 'never'],
 		'react/no-unescaped-entities': 0,
+		'react/react-in-jsx-scope': 'off',
+	},
+	settings: {
+		react: {
+			version: 'detect',
+		},
 	},
 }
