@@ -24,6 +24,7 @@ module.exports = {
 		semi: ['error', 'never'],
 		'react/no-unescaped-entities': 0,
 		'react/react-in-jsx-scope': 'off',
+		'@typescript-eslint/no-empty-interface': 'off',
 	},
 	settings: {
 		react: {
