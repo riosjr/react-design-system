@@ -18,13 +18,14 @@ module.exports = {
 	},
 	plugins: ['react', '@typescript-eslint'],
 	rules: {
+		'@typescript-eslint/no-empty-interface': 'off',
 		indent: ['error', 'tab'],
+		'no-empty-pattern': 'off',
 		'linebreak-style': ['error', 'unix'],
 		quotes: ['error', 'single'],
-		semi: ['error', 'never'],
-		'react/no-unescaped-entities': 0,
 		'react/react-in-jsx-scope': 'off',
-		'@typescript-eslint/no-empty-interface': 'off',
+		'react/no-unescaped-entities': 'off',
+		semi: ['error', 'never'],
 	},
 	settings: {
 		react: {
