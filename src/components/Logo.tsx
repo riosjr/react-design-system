@@ -1,6 +1,6 @@
-interface LogoProps extends React.SVGAttributes<HTMLOrSVGElement> {}
+export interface LogoProps extends React.SVGAttributes<HTMLOrSVGElement> {}
 
-function Logo(props: LogoProps) {
+export function Logo(props: LogoProps) {
 	return (
 		<svg
 			width={120}
@@ -22,4 +22,4 @@ function Logo(props: LogoProps) {
 	)
 }
 
-export default Logo
+//export default Logo
