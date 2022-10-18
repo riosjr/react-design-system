@@ -1,3 +1,7 @@
+# FIGMA FILE
+
+https://www.figma.com/file/xIwnAQcdfxjdkKXVwMDCfT/Ignite-Lab-Design-System?node-id=0%3A1
+
 # ESLINT & Prettier SETUP
 
 yarn eslint --init
