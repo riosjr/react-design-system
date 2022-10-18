@@ -1,6 +1,6 @@
 {
   "name": "react-design-system",
-  "private": true,
+  "license": "MIT",
   "version": "0.0.1",
   "type": "module",
   "scripts": {
@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.0.0",
@@ -28,6 +29,7 @@
     "@storybook/builder-vite": "^0.2.4",
     "@storybook/cli": "^6.5.12",
     "@storybook/react": "^6.5.12",
+    "@storybook/storybook-deployer": "^2.8.12",
     "@storybook/testing-library": "^0.0.13",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
