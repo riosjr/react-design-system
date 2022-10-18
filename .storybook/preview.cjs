@@ -2,6 +2,14 @@ import { themes } from '@storybook/theming'
 
 import '../src/styles/global.css'
 
+import { initialize, mswDecorator } from 'msw-storybook-addon'
+
+// Initialize MSW
+initialize()
+
+// export MSW decorator
+export const decorators = [mswDecorator]
+
 export const parameters = {
 	actions: { argTypesRegex: '^on[A-Z].*' },
 	controls: {

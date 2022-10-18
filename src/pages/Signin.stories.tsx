@@ -2,6 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { within, userEvent, waitFor } from '@storybook/testing-library'
 import { expect } from '@storybook/jest'
 import { Signin } from './Signin'
+import { rest } from 'msw'
 
 //global configurations
 
@@ -10,6 +11,19 @@ export default {
 	component: Signin,
 	args: {},
 	argTypes: {},
+	parameters: {
+		msw: {
+			handlers: [
+				rest.post('/sessions', (req, res, ctx) => {
+					return res(
+						ctx.json({
+							message: 'Login realizado!',
+						})
+					)
+				}),
+			],
+		},
+	},
 } as Meta
 
 // varitans configurations
