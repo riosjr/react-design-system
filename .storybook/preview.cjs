@@ -5,7 +5,9 @@ import '../src/styles/global.css'
 import { initialize, mswDecorator } from 'msw-storybook-addon'
 
 // Initialize MSW
-initialize()
+initialize({
+	onUnhandledRequest: 'bypass',
+})
 
 // export MSW decorator
 export const decorators = [mswDecorator]
