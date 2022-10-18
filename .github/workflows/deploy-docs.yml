@@ -19,7 +19,8 @@ jobs:
 
             #test
             - name: Install dependencies
-              run: npm ci --legacy-peers-deps
+              run: yarn install --frozen-lockfile
+              #npm ci --legacy-peers-deps
 
             - name: Build Storybook
               run: npm run build-storybook
